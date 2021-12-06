@@ -7,8 +7,8 @@ import {
 
 const router = Router();
 
-router.get("/create-order", createOrder);
+router.post("/create-order", createOrder);
 router.get("/capture-order", captureOrder);
-router.get("/cancel-order", cancelOrder);
+router.get("/cancel-payment", cancelOrder);
 
 export default router;
