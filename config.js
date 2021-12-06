@@ -1,5 +1,9 @@
-export const PAYPAL_API_CLIENT =
-  "AdyWPMF-iUxKC3O_Qk3mqo_y8uSb0zbB1g7BAlnyIm0iMb6b8AoueKu7e4iaHRKodsoUr0TR-7boZODv";
-export const PAYPAL_API_SECRET =
-  "EBP-Z9MQFyg72rUhex1IbrqtiRFAB5dLISE26ar5Ck7kcfi49Jts2vFtpPIAy3IDAgHYr9iNOqwZw6_e";
-export const PAYPAL_API = "https://api-m.sandbox.paypal.com";
+import { config } from "dotenv";
+
+config();
+
+export const PAYPAL_API_CLIENT = process.env.PAYPAL_API_CLIENT;
+export const PAYPAL_API_SECRET = process.env.PAYPAL_API_SECRET;
+export const PAYPAL_API = process.env.PAYPAL_API;
+
+export const HOST = "http://localhost:3000";
